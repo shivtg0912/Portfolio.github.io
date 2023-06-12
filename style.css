@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Geologica', sans-serif;
+    height: max-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.works{
+  text-align: center;
+}
+.col-9 p{
+  font-size:40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-fluid h1{
+  color: rgb(13, 72, 139);
+  border-bottom: 1cm #e1f1ff;
+  text-align: center;
+  font-weight: 1000;
+  margin-bottom:20px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+ul{
+  list-style-type:square;
+}
+.intro{
+  position: fixed;
+  z-index: 1;
+  left:0;
+  top: 0;
+  width: 110%;
+  height: 100vh;
+  background-color: #000000;
+  transition: 2s;
+}
+.logo-header{
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color:#ffffff;
+} 
+.logo{
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity:0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 204, 0);
+}
+.logo.active{
+  bottom:0;
+  opacity: 1;
+  transition: ease-in-out 900ms;
+}
+.logo.fade{
+  bottom:150px;
+  opacity: 0;
+  transition: ease-in 1s;
+}
+
+li{
+  margin-left:10px;
+  font-size:150%;
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+}
+section{
+  margin-bottom:10%;
+  padding: 20px;
+  border-bottom:2px cornsilk;
+}
+section h1{
+  margin-bottom: 30px;
+  display: grid;
+  place-items:center;
+  align-content: center;
+  font-weight: 900;
+  color: #008cff;
+}
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+}
+
+/*IMAGES CSS*/
+img.web{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 5%;
+  height: 400px;
+  width: 600px;
+  transition: all 0.1s;
+ }
+ img.web:hover{
+  height:450px;
+  width:650px;
+ }
+.pic{
+  height: 250px;
+  width: 200px;
+  border-radius: 20%;
+}
+.prog{
+  margin-left:50%;
+  max-width: 40%;
+  max-height: 40%;
+  size: 200px;
+  transition: all 2s;
+}
+.prog:hover{
+  transform: translateX(10px);
+  box-shadow: #750d37;
+}
+
+.mylogo{
+  border-radius: 50%;
+  transition: all 5s;
+}
+.mylogo:hover{
+  transform: rotate(360deg);
+  box-shadow: #e1f1ff;
+}
+
+i{
+  transition: all 0.9s;
+  size:5px;
+}
+i:hover{transform: translateY(-0.1em);}
