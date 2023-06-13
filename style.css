@@ -6,13 +6,41 @@
 body{
     font-family: 'Geologica', sans-serif;
     height: max-content;
-    background-color: #ffffff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .works{
   text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: medium;
+}
+.col-10 p{
+  font-size: 50px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .col-9 p{
   font-size:40px;
@@ -37,7 +65,7 @@ ul{
   top: 0;
   width: 110%;
   height: 100vh;
-  background-color: #000000;
+  background-color: #ffffff;
   transition: 2s;
 }
 .logo-header{
@@ -84,7 +112,7 @@ section h1{
   place-items:center;
   align-content: center;
   font-weight: 900;
-  color: #008cff;
+  color: #000000;
 }
 .hidden{
   opacity: 0;
@@ -128,13 +156,8 @@ img.web{
 
 .mylogo{
   border-radius: 50%;
-  transition: all 5s;
+  animation: rotation 20s infinite linear;
 }
-.mylogo:hover{
-  transform: rotate(360deg);
-  box-shadow: #e1f1ff;
-}
-
 i{
   transition: all 0.9s;
   size:5px;
