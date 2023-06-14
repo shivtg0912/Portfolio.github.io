@@ -31,23 +31,14 @@ body{
       transform: rotate(360deg);
   }
 }
-nav{
-  margin-bottom: 30px;
-}
 .works{
   text-align: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size:30px;
 }
-.col-10 p{
+.col-9 p{
   font-size: 60px;
   font-family:Arial, Helvetica, sans-serif;
-}
-.col-9 p{
-  font-size:40px;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-bottom: 1em;
-  color: white;
 }
 .container-fluid h1{
   color: rgb(13, 72, 139);
@@ -58,8 +49,6 @@ nav{
   padding: 10px;
   background-color: rgb(255, 255, 255);
 }
-
-
 li{
   margin: 0 0 40px 20px;
   font-size:200%;
@@ -75,15 +64,25 @@ section{
 }
 section h1{
   font-size: 4em;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   display: grid;
   place-items:center;
   align-content: center;
   font-weight: 900;
   color: #000000;
 }
+.col-4{
+  display: flex;
+  justify-content: end;
+}
 h2{
   font-family: 'Phudu', cursive;
+}
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 /*For Scroll effect*/
 .hidden{
@@ -142,7 +141,7 @@ div.show{
   opacity:0;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 204, 0);
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .logo.active{
   bottom:0;
@@ -152,7 +151,7 @@ div.show{
 .logo.fade{
   bottom:150px;
   opacity: 0;
-  transition: ease-in 1s;
+  transition: ease-in 2s;
 }
 
 /*IMAGES CSS*/
@@ -171,20 +170,24 @@ img.web{
   width:650px;
  }
 .pic{
-  max-height: 250px;
-  max-width: 150px;
+  margin-top:6em;
+  margin-left:15px;
+  max-height: 300px;
+  max-width: 225px;
+  min-height:200px;
+  min-width: 150px;
   border-radius: 20%;
 }
 .prog{
-  margin-left:50%;
-  margin-bottom:1em;
-  max-width: 40%;
-  max-height: 40%;
-  size: 200px;
-  transition: all 2s;
+  margin:0 5px 0 5px;
+  max-width:183.6px;
+  max-height:183.6px;
+  min-height:90px;
+  min-width:90px;
+  transition: all 1.5s;
 }
 .prog:hover{
-  transform: translateX(10px);
+  transform: translateY(-15px);
 }
 
 .mylogo{
