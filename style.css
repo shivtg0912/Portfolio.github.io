@@ -153,7 +153,6 @@ div.show{
   opacity: 0;
   transition: ease-in 2s;
 }
-
 /*IMAGES CSS*/
 img.web{
   display: block;
@@ -193,6 +192,8 @@ img.web{
 .mylogo{
   border-radius: 50%;
   animation: rotation 20s infinite linear;
+  max-width: 130px;
+  max-height:130px;
 }
 i{
   transition: all 0.9s;
