@@ -198,3 +198,22 @@ i{
   size:5px;
 }
 i:hover{transform: translateY(-0.1em);}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top:45px;
+  min-width:170px;
+  z-index: 1;
+}
+.dropdown-content h2{
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: center;
+}
