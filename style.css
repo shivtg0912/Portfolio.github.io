@@ -7,6 +7,8 @@ html{
   scroll-behavior: smooth;
 }
 body{
+    display: flexbox;
+    bottom: auto;
     font-family: 'Geologica', sans-serif;
     height: max-content;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -64,7 +66,7 @@ section{
   margin-bottom:15%;
   padding: 20px;
   border-bottom:2px rgb(255, 255, 255);
-  min-height: 70vh;
+  min-height: 50vh;
 }
 section h1{
   font-size: 4em;
